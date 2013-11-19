@@ -20,6 +20,10 @@ public class Application {
 		
 		System.out.println(service2);
 		
+		CustomerService service3 = appContext.getBean("customerService", CustomerService.class);
+		
+		System.out.println(service3);
+		
 		System.out.println(service.findAll().get(0).getFirstname());
 	}
 

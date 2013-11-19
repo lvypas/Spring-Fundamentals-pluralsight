@@ -5,7 +5,7 @@
 
 	<bean name="customerRepository" class="com.pluralsight.repository.HibernateCustomerRepositoryImpl" />
 	
-	<bean name="customerService" class="com.pluralsight.service.CustomerServiceImpl" autowire="byName" scope="singleton">		
+	<bean name="customerService" class="com.pluralsight.service.CustomerServiceImpl" autowire="byName" scope="prototype">		
 	</bean>
 
 </beans>
